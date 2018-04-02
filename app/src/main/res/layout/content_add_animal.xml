@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddAnimal"
+    tools:showIn="@layout/activity_add_animal">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="368dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="הוספת בעל חיים"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/animalName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="שם"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <EditText
+                android:id="@+id/animalAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="גיל"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/animalName" />
+
+            <EditText
+                android:id="@+id/deliveryDate"
+                android:layout_width="214dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="תאריך הגעה"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/animalAge" />
+
+            <Spinner
+                android:id="@+id/chooseGender"
+                android:layout_width="214dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deliveryDate" />
+
+            <EditText
+                android:id="@+id/animalNumber"
+                android:layout_width="214dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="מספר"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chooseGender" />
+
+            <EditText
+                android:id="@+id/animalChip"
+                android:layout_width="214dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="מספר שבב"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/animalNumber" />
+
+            <EditText
+                android:id="@+id/animalType"
+                android:layout_width="214dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="סוג"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/animalChip" />
+
+            <EditText
+                android:id="@+id/animalColor"
+                android:layout_width="214dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="סימנים מיוחדים/צבע"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/animalType" />
+
+            <Spinner
+                android:id="@+id/reasonOfDelivery"
+                android:layout_width="214dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/animalColor" />
+
+            <EditText
+                android:id="@+id/acceptingDoctor"
+                android:layout_width="214dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="רופא מקבל"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reasonOfDelivery" />
+
+            <EditText
+                android:id="@+id/sectorNumber"
+                android:layout_width="214dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="מספר מחלקה"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/acceptingDoctor" />
+
+            <EditText
+                android:id="@+id/cageNumber"
+                android:layout_width="214dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="מספר כלוב"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sectorNumber" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

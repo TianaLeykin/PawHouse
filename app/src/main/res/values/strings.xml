@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PawHouse</string>
+    <string name="title_activity_add_animal">AddAnimal</string>
 </resources>

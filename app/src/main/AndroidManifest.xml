@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".AddSenctuary"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AddSector"
+            android:parentActivityName=".AddSenctuary"></activity>
+        <activity
+            android:name=".AddAnimal"
+            android:label="@string/title_activity_add_animal"
+            android:parentActivityName=".AddSector"
+            android:theme="@style/AppTheme.NoActionBar" />
+
     </application>
 
 </manifest>
